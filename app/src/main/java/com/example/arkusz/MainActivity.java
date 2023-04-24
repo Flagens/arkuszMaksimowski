@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 if (email.contains("@")) {
                     String password = passwordInput.getText().toString();
                     String repeatedPassword = repeatedPasswordInput.getText().toString();
-                    if (password.equals(repeatedPassword)) {
+                    if (password.equals(repeatedPassword) && !password.equals("")) {
                         resultLabel.setText("Witaj " + email);
                     } else {
                         resultLabel.setText("Haslo nie zgadzaja sie");
